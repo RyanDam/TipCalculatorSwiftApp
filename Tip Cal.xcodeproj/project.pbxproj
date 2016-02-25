@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		941D3C6D1C7ED34000C50BFE /* README.MD in Sources */ = {isa = PBXBuildFile; fileRef = 941D3C6C1C7ED34000C50BFE /* README.MD */; };
-		941D3C6F1C7ED66C00C50BFE /* walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = 941D3C6E1C7ED66C00C50BFE /* walkthrough.gif */; };
+		949428841C7EDD6000BCDD05 /* walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = 949428831C7EDD6000BCDD05 /* walkthrough.gif */; };
 		94CEDED71C7DD7B3001CF93C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEDED61C7DD7B3001CF93C /* AppDelegate.swift */; };
 		94CEDED91C7DD7B3001CF93C /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEDED81C7DD7B3001CF93C /* TipViewController.swift */; };
 		94CEDEDC1C7DD7B3001CF93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CEDEDA1C7DD7B3001CF93C /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		941D3C6C1C7ED34000C50BFE /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
-		941D3C6E1C7ED66C00C50BFE /* walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough.gif; sourceTree = "<group>"; };
+		949428831C7EDD6000BCDD05 /* walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough.gif; sourceTree = "<group>"; };
 		94CEDED31C7DD7B3001CF93C /* Tip Cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CEDED61C7DD7B3001CF93C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CEDED81C7DD7B3001CF93C /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		94CEDECA1C7DD7B3001CF93C = {
 			isa = PBXGroup;
 			children = (
-				941D3C6E1C7ED66C00C50BFE /* walkthrough.gif */,
+				949428831C7EDD6000BCDD05 /* walkthrough.gif */,
 				941D3C6C1C7ED34000C50BFE /* README.MD */,
 				94CEDED51C7DD7B3001CF93C /* tips */,
 				94CEDEEA1C7DD7B3001CF93C /* tipsTests */,
@@ -188,10 +188,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				941D3C6F1C7ED66C00C50BFE /* walkthrough.gif in Resources */,
 				94CEDEE11C7DD7B3001CF93C /* LaunchScreen.storyboard in Resources */,
 				94CEDEDE1C7DD7B3001CF93C /* Assets.xcassets in Resources */,
 				94CEDEDC1C7DD7B3001CF93C /* Main.storyboard in Resources */,
+				949428841C7EDD6000BCDD05 /* walkthrough.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

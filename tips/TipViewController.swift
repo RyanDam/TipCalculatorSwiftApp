@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
         setupNavigation()
     }
     
@@ -33,6 +32,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         let index = defaultUser.integerForKey(SettingsViewController.INDEX_FOR_TIP_PERCENT)
         tipIndex = index
         onChangeBillAmong(billAmong)
@@ -80,11 +80,13 @@ class ViewController: UIViewController {
         if isAnimating { return }
         let velo = sender.velocityInView(self.billPaperView)
         if (velo.y > self.animationTrigger) {
+            // darg down
             if (self.tipIndex > 0) {
                 self.tipIndex = self.tipIndex - 1
                 animationPaper(animationGap)
             }
         } else if (velo.y < -self.animationTrigger){
+            // drag up
             if (self.tipIndex < tipPercents.count - 1) {
                 self.tipIndex = self.tipIndex + 1
                 animationPaper(-animationGap)
@@ -92,6 +94,9 @@ class ViewController: UIViewController {
         }
     }
     
+    // Pull Animation handy method
+    // gap < 0 to push up
+    // gap > 0 to pull down
     func animationPaper(gap:CGFloat) {
         UIView.animateWithDuration(0.2, animations: {()->Void in
             self.paperView.frame.origin.y += gap
